@@ -1,9 +1,9 @@
 <?php
 include 'header.php';
 ?>
-<main class="container">
+<main class="container mt-5">
     <h4 class="text-center">DANH SÁCH TỔNG HỢP KẾT QUẢ THI CỦA THÍ SINH</h4>
-    <table class="table border border-dark ">
+    <table class="table border border-dark mt-3 ">
         <thead>
             <tr class="table-dark">
                 <th scope="col">Số thứ tự</th>
@@ -19,8 +19,6 @@ include 'header.php';
         <tbody>
             <?php
             $files = scandir('./result');
-            foreach($files as $file){              
-            }
             for($i = 3 ; $i < count($files) ; $i ++){
                 echo '<tr>';
                 echo '<th scope="row border border-dark">'.($i-2).'</th>';
@@ -38,9 +36,9 @@ include 'header.php';
     <table class="table border border-dark">
   <thead>
     <tr>
-      <th scope="col" class="border border-dark">Giám thị 01</th>
-      <th scope="col" class="border border-dark">Giám thị 02</th>
-      <th scope="col" class="border border-dark">Trưởng ban coi thi</th>
+      <th scope="col" class="border border-dark text-center pb-5">Giám thị 01</th>
+      <th scope="col" class="border border-dark text-center pb-5">Giám thị 02</th>
+      <th scope="col" class="border border-dark text-center pb-5">Trưởng ban coi thi</th>
       
     </tr>
   </thead>
